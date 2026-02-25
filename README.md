@@ -135,16 +135,50 @@ src/
 
 ## 📸 Screenshots
 
-Include the following in your submission:
+### 🔐 Login Page
 
-- Login Page
-- Dashboard
-- Details Page
-- Camera Capture
-- Salary Bar Graph
-- Map View
+Normal Login View  
+![Login](./screenshots/login1.png)
+
+Invalid Credentials Error  
+![Login Error](./screenshots/login2.png)
 
 ---
+
+### 📊 Dashboard
+
+![Dashboard](./screenshots/dashboard.png)
+
+Search Functionality  
+![Search](./screenshots/search.png)
+
+---
+
+### 📄 Employee Details
+
+![Details](./screenshots/details.png)
+
+---
+
+### 📸 Photo Capture & Preview
+
+![Photo Preview](./screenshots/photo-preview.png)
+
+---
+
+### 📈 Salary Bar Graph
+
+![Bar Graph](./screenshots/bar-graph.png)
+
+---
+
+### 🗺 Map View
+
+Map Overview  
+![Map](./screenshots/map.png)
+
+Map with City Popup  
+![Map Popup](./screenshots/map2.png)
 
 ## 🎥 Demo
 
