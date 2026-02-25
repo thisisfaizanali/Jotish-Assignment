@@ -102,7 +102,7 @@ The API response is processed and transformed into structured objects before ren
 ### 1️⃣ Clone Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/thisisfaizanali/Jotish-Assignment
 cd jotish-assignment
 ```
 
