@@ -1,8 +1,17 @@
 # 🚀 Jotish Internship Assignment
 
-A modern ReactJS dashboard application built as part of the Jotish internship assignment.
+A ReactJS dashboard application developed as part of the Jotish Internship Assignment.
 
-This project demonstrates authentication, API integration, data visualization, camera integration, and responsive UI design using modern frontend best practices.
+This project demonstrates authentication, REST API integration, data transformation, visualization, camera functionality, and responsive UI design using modern frontend best practices.
+
+---
+
+## 🎥 Demo Video
+
+The following video demonstrates the complete working flow of the application, including login, dashboard, employee details, camera capture, bar graph visualization, and map integration.
+
+👉 **Watch Demo Here:**  
+https://www.loom.com/share/e73331c1bbfd418094fd7db314ad476d
 
 ---
 
@@ -11,47 +20,48 @@ This project demonstrates authentication, API integration, data visualization, c
 ### 🔐 Authentication
 
 - Login validation using environment variables
-- Redirect to dashboard on successful login
+- Redirect to dashboard on successful authentication
 - Logout functionality
 
 ### 📊 Employee Dashboard
 
 - Fetches employee data from REST API
-- Displays employees in responsive card layout
+- Transforms raw API response into structured objects
+- Responsive card layout
 - Live search filtering
-- Dashboard summary statistics:
+- Dashboard summary metrics:
   - Total Employees
   - Unique Cities
   - Highest Salary
 
 ### 📄 Employee Details Page
 
-- Displays complete employee information
-- Clean structured layout
+- Displays full employee information
+- Clean and structured layout
 - Navigation controls
 
 ### 📸 Camera Integration
 
 - Capture employee photo using webcam
 - Preview captured image
-- Retake option
+- Retake functionality
 
 ### 📈 Data Visualization
 
-- Salary Bar Graph (Top 10 employees)
-- Interactive Map showing employee cities
+- Salary Bar Graph (Top 10 Employees)
+- Interactive Map displaying employee cities
 
 ---
 
 ## 🛠 Tech Stack
 
-- **React (Vite)**
-- **TailwindCSS**
-- **React Router**
-- **Axios**
-- **Recharts**
-- **React Leaflet**
-- **React Webcam**
+- React (Vite)
+- TailwindCSS
+- React Router
+- Axios
+- Recharts
+- React Leaflet
+- React Webcam
 
 ---
 
@@ -63,7 +73,7 @@ Data is fetched from:
 https://backend.jotish.in/backend_dev/gettabledata.php
 ```
 
-POST Request Body:
+**POST Request Body:**
 
 ```json
 {
@@ -72,37 +82,39 @@ POST Request Body:
 }
 ```
 
-The API returns structured employee data which is transformed into usable objects before rendering.
+The API response is processed and transformed into structured objects before rendering within the UI.
 
 ---
 
 ## 🧠 Architecture Decisions
 
-- API logic separated into `services/api.js`
-- Environment variables used for credentials
-- Data transformation layer for cleaner UI logic
-- Loading and error states handled properly
-- Responsive grid layout
-- Reusable design system using Tailwind utilities
+- API logic isolated in `services/api.js`
+- Environment variables used for configuration
+- Data transformation layer implemented for clean UI rendering
+- Loading and error states handled gracefully
+- Responsive layout using Tailwind utility classes
+- Simple caching implemented to prevent redundant API calls
 
 ---
 
 ## ⚙️ Setup Instructions
 
-1. Clone the repository
+### 1️⃣ Clone Repository
 
 ```bash
 git clone <your-repo-url>
 cd jotish-assignment
 ```
 
-2. Install dependencies
+### 2️⃣ Install Dependencies
 
 ```bash
 npm install
 ```
 
-3. Create `.env` file in root
+### 3️⃣ Create `.env` File
+
+Create a `.env` file in the project root:
 
 ```
 VITE_API_URL=https://backend.jotish.in/backend_dev/gettabledata.php
@@ -112,7 +124,7 @@ VITE_APP_USERNAME=testuser
 VITE_APP_PASSWORD=Test123
 ```
 
-4. Start development server
+### 4️⃣ Run Development Server
 
 ```bash
 npm run dev
@@ -128,7 +140,7 @@ src/
  ├── services/
  ├── components/
  ├── App.jsx
- ├── main.jsx
+ └── main.jsx
 ```
 
 ---
@@ -180,32 +192,4 @@ Map Overview
 Map with City Popup  
 ![Map Popup](./screenshots/map2.png)
 
-## 🎥 Demo
-
-Include a 2–3 minute screen recording demonstrating:
-
-1. Login
-2. Dashboard data rendering
-3. Search functionality
-4. Details navigation
-5. Photo capture
-6. Bar graph
-7. Map view
-8. Logout
-
 ---
-
-## 📌 Conclusion
-
-This project showcases:
-
-- API integration
-- State management
-- UI/UX design
-- Data visualization
-- Real-world frontend architecture
-- Clean and scalable project structure
-
----
-
-💡 Built with attention to detail and modern frontend best practices.
